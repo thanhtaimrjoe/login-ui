@@ -31,7 +31,7 @@ class Body extends StatelessWidget {
                 }));
               },
               color: kPrimaryColor,
-              textColor: Colors.yellowAccent,
+              textColor: Colors.blueAccent,
             ),
             RoundedButton(
               text: "SIGN UP",
