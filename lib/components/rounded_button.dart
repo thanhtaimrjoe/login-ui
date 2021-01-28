@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_demo/constants.dart';
 
 class RoundedButton extends StatelessWidget {
   final String text;
@@ -7,13 +6,8 @@ class RoundedButton extends StatelessWidget {
   final Color color, textColor;
 
   const RoundedButton(
-      {Key key, 
-      this.text, 
-      this.press, 
-      this.color, 
-      this.textColor
-      }
-  ) : super(key: key);
+      {Key key, this.text, this.press, this.color, this.textColor})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,10 +21,7 @@ class RoundedButton extends StatelessWidget {
           padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
           color: color,
           onPressed: press,
-          child: Text(
-            text, 
-            style: TextStyle(color: textColor)
-          ),
+          child: Text(text, style: TextStyle(color: textColor)),
         ),
       ),
     );
