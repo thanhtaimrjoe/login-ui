@@ -15,26 +15,27 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "WELCOME TO YANO'S HOME",
+              "CON ĐỈ LỘC",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: size.height * 0.03),
             SvgPicture.asset(
               "assets/icons/chat.svg",
               height: size.height * 0.45,
             ),
             SizedBox(height: size.height * 0.05),
             RoundedButton(
-              text: "LOGIN",
+              text: "ログイン",
               press: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return LoginScreen();
                 }));
               },
               color: kPrimaryColor,
-              textColor: Colors.redAccent,
+              textColor: Colors.white,
             ),
             RoundedButton(
-              text: "SIGN UP",
+              text: "登録",
               press: () {},
               color: kPrimaryLightColor,
             )
