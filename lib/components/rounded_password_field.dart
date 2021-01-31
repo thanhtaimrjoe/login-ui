@@ -3,9 +3,13 @@ import 'package:login_demo/components/text_field_container.dart';
 import 'package:login_demo/constants.dart';
 
 class RoundedPasswordField extends StatelessWidget {
+
+  final String hintText;
+  final IconData icon;
+  final Color color;
   final ValueChanged<String> onChanged;
   const RoundedPasswordField({
-    Key key, this.onChanged,
+    Key key, this.onChanged, this.hintText, this.icon, this.color,
   }) : super(key: key);
 
   @override
@@ -14,14 +18,14 @@ class RoundedPasswordField extends StatelessWidget {
       child: TextField(
         obscureText: true, //change text to password
         decoration: InputDecoration(
-          hintText: "パスワード",
+          hintText: hintText,
           icon: Icon(
-            Icons.lock,
-            color: kPrimaryColor,
+            icon,
+            color: color,
           ),
           suffixIcon: Icon(
             Icons.visibility, 
-            color: kPrimaryColor,
+            color: color,
           ),
           border: InputBorder.none,
         ),

@@ -6,6 +6,8 @@ import 'package:login_demo/components/rounded_input_field.dart';
 import 'package:login_demo/components/rounded_password_field.dart';
 import 'package:login_demo/constants.dart';
 
+import '../../../constants.dart';
+
 class Body extends StatelessWidget {
   const Body({
     Key key,
@@ -32,6 +34,9 @@ class Body extends StatelessWidget {
             onChanged: (value) {},
           ),
           RoundedPasswordField(
+            hintText: "パスワード",
+            color: kPrimaryColor,
+            icon: Icons.lock,
             onChanged: (value) {},
           ),
           RoundedButton(
